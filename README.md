@@ -9,7 +9,7 @@ This system uses four strategically placed 24.125 GHz microwave Doppler sensors 
 
 ## System Architecture
 
-![System Architecture](./images/system-architecture.svg)
+![System Architecture](./system-architecture.svg)
 
 The system architecture consists of multiple layers:
 - **Data Collection Layer**: Custom PyQt5 interface for capturing and managing sensor data
