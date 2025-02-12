@@ -1,12 +1,21 @@
 # Hand Gesture Recognition Using Micro-Doppler Signatures
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A novel hand gesture recognition system utilizing micro-Doppler signatures from 24.125 GHz Doppler radar sensors. This project demonstrates high-accuracy gesture recognition using raw Doppler signals processed through advanced machine learning algorithms.
 
 ## Project Overview
 
 This system uses four strategically placed 24.125 GHz microwave Doppler sensors to capture hand movements and recognize written letters through their unique Doppler signatures. The project implements various machine learning and deep learning approaches to achieve high recognition accuracy.
+
+## System Architecture
+
+![System Architecture](./images/system-architecture.svg)
+
+The system architecture consists of multiple layers:
+- **Data Collection Layer**: Custom PyQt5 interface for capturing and managing sensor data
+- **Hardware Layer**: Arduino Mega controller interfacing with four 24.125 GHz Doppler sensors
+- **Signal Processing Layer**: STFT and spectogram generation for feature extraction
+- **Machine Learning Layer**: Multiple classification approaches including traditional ML, CNN, and TSMixer models
 
 ### Key Features
 
@@ -20,7 +29,7 @@ This system uses four strategically placed 24.125 GHz microwave Doppler sensors 
 - Custom-built data collection and processing pipeline
 - High accuracy rates (up to 99% with multi-channel CNN)
 
-## Technical Architecture
+## Technical Details
 
 ### Hardware Components
 
@@ -107,9 +116,6 @@ Research from this project has been presented in the academic paper: "Hand Gestu
 
 - Ahmet Turan Ateş
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
